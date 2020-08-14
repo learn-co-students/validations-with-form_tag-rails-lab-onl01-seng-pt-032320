@@ -74,5 +74,6 @@ RSpec.describe PostsController do
       patch :update, params: bad_attributes.merge(id: @article.id)
       expect(response).to render_template(:edit)
     end
+    
   end
 end
