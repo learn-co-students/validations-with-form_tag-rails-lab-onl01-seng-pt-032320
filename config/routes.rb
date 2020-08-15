@@ -9,6 +9,6 @@ Rails.application.routes.draw do
   get "/posts/new", to: "posts#new", as: "new_post"
   get "/posts/:id", to: "posts#show", as: "post"
   get "/posts/:id/edit", to: "posts#edit", as: "edit_post"
-  post "/authors", to: "post#create"
+  post "/posts", to: "posts#create", as: "create_post"
   patch "/posts/:id", to: "posts#update"
 end
